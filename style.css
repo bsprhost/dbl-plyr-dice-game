@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+/* 8888888888888888888888888888888888888888888888888888888888888888888 */
+
+#dice-game-board {
+	display: flex;
+	align-items: stretch;
+	height: 100vh;
+	background-color: black
+}
+
+/* 8888888888888888888888888888888888888888888888888888888888888888888 */
+
+#info-panel {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+	overflow: auto;
+	margin: 4px;
+	background-color: #ff0090;
+	font-weight: bold;
+	font-size:large;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+}
+
+#status {
+	flex: 16;
+	position: relative;
+	flex-shrink: 1;
+	overflow: auto;
+	height: 70px;
+	margin: 10px;
+	padding: 10px;
+	background-color:aqua;
+	border: 3px, solid, black;
+	border-radius: 5px;
+	border: 4px;
+}
+
+/* 8888888888888888888888888888888888888888888888888888888888888888888 */
+
+#score-panel {
+	display: flex;;
+	flex: 1;
+	position: relative;
+	height: 70px;
+	margin: 10px;
+	padding: 10px;
+	background-color:blueviolet;
+	border-radius: 5px;
+	border: 4px;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+	justify-content: space-between;
+}
+
+#plyr-a, #plyr-b {
+	flex: 3;
+	font-size: medium;
+	padding: 4px;
+	margin: 4px;
+}
+
+#plyr-a-tot, #plyr-b-tot {
+	flex: 1;
+	font-size: medium;
+	padding: 4px;
+	margin: 4px;
+}
+
+/* 8888888888888888888888888888888888888888888888888888888888888888888 */
+
+#dice-panel {
+	display: flex;
+	flex: 1;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	margin: 10px;
+	padding: 10px 30px;
+	background-color:blueviolet;
+	border-radius: 5px;
+	border: 4px;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+}
+
+#dice-1, #dice-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:10px;
+	padding:10px;
+	text-align:center;
+	font-size:24px;
+	background: greenyellow;
+	height: 60px;
+	width: 60px;
+}
+
+/* 8888888888888888888888888888888888888888888888888888888888888888888 */
+
+#btn-panel {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 4px;
+	position: relative;
+	align-items: stretch;
+	background-color: rgb(26, 255, 0);
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+}
+
+.btn {
+	position: relative;
+	flex-shrink: 1;
+	height: 70px;
+	margin: 14px;
+	padding: 6px 6px;
+	background-color: blue;
+	border-radius: 5px;
+	border: 4px;
+	border-color: aqua;
+	font-size: 16px;
+	color: aqua;
+	cursor: pointer;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+}
+
+.btn:hover {
+	background-color: aqua;
+	color: blue;
+}
