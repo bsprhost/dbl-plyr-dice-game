@@ -258,6 +258,8 @@ class clsDblDiceMgr {
         let dice2 = document.getElementById("dice-2");
         let status = document.getElementById("status");
         let btnStart = document.getElementsByClassName("btn")[0];
+        let btnAHold = document.getElementsByClassName("btn")[1];
+        let btnBHold = document.getElementsByClassName("btn")[2];
         let btnRoll = document.getElementsByClassName("btn")[3];
         let plyrA = document.getElementById("plyr-a");
         let plyrB = document.getElementById("plyr-b");
@@ -279,10 +281,13 @@ class clsDblDiceMgr {
         plyrA.style.backgroundColor = '#afd1e9';
         plyrATot.style.backgroundColor = '#afd1e9';
         plyrATot.innerText = 0;
+        btnAHold.disabled = false;
+        
         this.diceTotal = 0;
         plyrB.style.backgroundColor = '#ffff00';
         plyrBTot.style.backgroundColor = '#ffff00';
         plyrBTot.innerText = 0;
+        btnBHold.disabled = false;
         this.diceTotal2 = 0;
 
         dice1.innerText = "";
